@@ -63,7 +63,8 @@
                     const params = new URLSearchParams({
                         id: profile.userId,
                         name: profile.displayName,
-                        img: profile.pictureUrl || ""
+                        img: profile.pictureUrl || "",
+                        from: "liff"
                     });
 
                     const redirectUrl = `${GAS_URL}?${params.toString()}`;
